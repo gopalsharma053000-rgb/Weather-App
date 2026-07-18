@@ -1,4 +1,4 @@
-const apikey = "b12f20a21b28e98117659cbfff78fc8e";
+const apikey = "55a3d6f7a01550b9ca2cfae6fd09ba6b";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
@@ -18,19 +18,19 @@ async function checkWeather(city){
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
     if(data.weather[0].main == "Clouds"){
-        weatherIcon.src = "clouds.png";
+        weatherIcon.src = "images/clouds.png";
     }
     else if(data.weather[0].main =="clear"){
-        weatherIcon.src = "clear.png";
+        weatherIcon.src = "images/clear.png";
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "rain.png";
+        weatherIcon.src = "images/rain.png";
     }
     else if(data.weather[0].main == "Drizzle"){
-        weatherIcon.src = "drizzle.png";
+        weatherIcon.src = "images/drizzle.png";
     }
     else if(data.weather[0].main == "Mist"){
-        weatherIcon.src = "Mist.png";
+        weatherIcon.src = "images/Mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
